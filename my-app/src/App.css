@@ -112,11 +112,11 @@ li {
 
 .section__4 .block_bord,
 .section__2 .block_bord {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.9);
   height: 100px;
   width: 100%;
   border-radius: 100px 100px 0px 0px;
-  z-index: 9;
+  mix-blend-mode: overlay;
 }
 
 .with-img {
