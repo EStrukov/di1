@@ -53,6 +53,7 @@ li {
   padding-bottom: 18px;
   padding-left: 54px;
   padding-right: 54px;
+  transition: all 0.3s ease 0s;
 }
 
 .nav__link-button:hover {
@@ -60,6 +61,7 @@ li {
   border: 2px solid #121213;
   background: #F9F8F8;
   color: #121213;
+  transition: all 0.3s ease 0s;
 }
 
 .section_header {
@@ -74,12 +76,22 @@ li {
     background: #D9D9D9;
 }
 
-.section__1 div {
+.section__1 .background {
   height: 722px;
   background: url('./assets/tyke.png') 0 0/100% 100% no-repeat;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  gap: 200px;
   align-items:center;
+  flex-direction: column;
+}
+
+.section__1 .block_bord {
+  background-color: rgba(18, 18, 19, 0.85);
+  height: 100px;
+  width: 100%;
+  border-radius: 100px 100px 0px 0px;
+  z-index: 9;
 }
 
 .section__1 div p {
@@ -95,13 +107,20 @@ li {
 }
 
 .section__2 {
-  border-top-left-radius: 100px;
-  border-top-right-radius: 100px;
   background-color: rgba(18, 18, 19, 0.85);
-  padding: 100px 160px 200px 160px;
+}
+
+.section__4 .block_bord,
+.section__2 .block_bord {
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 100px;
+  width: 100%;
+  border-radius: 100px 100px 0px 0px;
+  z-index: 9;
 }
 
 .with-img {
+  padding-top: 50px;
   display: flex;
   justify-content: center;
 }
@@ -113,6 +132,7 @@ li {
 }
 
 .card-list {
+  padding: 0 160px 200px 160px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -171,7 +191,6 @@ li {
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
   background-color: rgba(18, 18, 19, 0.85);
-  padding: 100px 160px 200px 160px;
 }
 
 .section__4 .lines {
@@ -180,14 +199,19 @@ li {
   top: -80px;
 }
 
+.slider__container {
+    padding: 0 160px 100px 160px;
+}
 .slide {
   display: none;
-  max-height: 600px;
-  min-height: 600px;
+  max-height: 0px;
+  min-height: 0px;
 }
 
 .slide.active {
   display: block;
+  max-height: 600px;
+  min-height: 600px;
 }
 
 .control {
@@ -270,7 +294,7 @@ line-height: normal;
 }
 
 .section__5 {
-  padding: 200px 160px 100px;
+  padding: 50px 160px 100px;
   justify-content: center;
   align-items: center;
   border-radius: 100px 100px 0px 0px;

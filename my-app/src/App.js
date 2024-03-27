@@ -49,7 +49,7 @@ function App() {
       <div className="img__container">
         <img src={step2} alt="Slide 2" />
       </div>
-      
+
       <div className="slide__content-text">
         <h3>Header</h3>
         <p>
@@ -77,8 +77,10 @@ function App() {
       </div>
     </div>,
     <div className="slide__content">
-      <div className="img__container"><img src={step3} alt="Slide 3" /></div>
-      
+      <div className="img__container">
+        <img src={step3} alt="Slide 3" />
+      </div>
+
       <div className="slide__content-text">
         <h3>Header</h3>
         <p>
@@ -106,8 +108,10 @@ function App() {
       </div>
     </div>,
     <div className="slide__content">
-      <div className="img__container"><img src={step4} alt="Slide 4" /></div>
-      
+      <div className="img__container">
+        <img src={step4} alt="Slide 4" />
+      </div>
+
       <div className="slide__content-text">
         <h3>Header</h3>
         <p>
@@ -144,8 +148,9 @@ function App() {
       <main>
         <section className="section__1">
           <h1 className="section_header black">Scoreboard text</h1>
-          <div>
+          <div className="background">
             <p>Contract: x8c81B4c816d66D36c4bF348BdeC01dBCbC70E987</p>
+            <div className="block_bord"></div>
           </div>
         </section>
         <section className="section__2">
@@ -191,6 +196,7 @@ function App() {
               </div>
             </li>
           </ul>
+          <div className="block_bord"></div>
         </section>
         <section className="section__3">
           <h1 className="section_header white">Horizontal art</h1>
@@ -203,6 +209,7 @@ function App() {
           <div className="slider__container">
             {<SimpleSlider slides={slides} controls={controls} />}
           </div>
+          <div className="block_bord"></div>
         </section>
         <section className="section__5">
           <div className="with-img">
