@@ -154,6 +154,7 @@ function App() {
           </div>
         </section>
         <section className="section__2">
+          <div className="section__2-wrap">
           <div className="with-img">
             <img className="lines" src={lines} alt="lines" />
             <h1 className="section_header white">Tokenomics</h1>
@@ -197,6 +198,7 @@ function App() {
             </li>
           </ul>
           <div className="block_bord"></div>
+          </div>
         </section>
         <section className="section__3">
           <h1 className="section_header white">Horizontal art</h1>

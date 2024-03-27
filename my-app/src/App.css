@@ -84,11 +84,11 @@ li {
 }
 
 .section__1 .block_bord {
-  background-color: rgba(18, 18, 19, 0.85);
+  background: url('./assets/grey_pattern.svg') #000 repeat;
+    opacity: 1;
   height: 100px;
   width: 100%;
   border-radius: 100px 100px 0px 0px;
-  z-index: 9;
 }
 
 .section__1 div p {
@@ -104,16 +104,24 @@ li {
 }
 
 .section__2 {
-  background-color: rgba(18, 18, 19, 0.85);
+  /* background-color: rgba(18, 18, 19, 0.85); */
+  background: url('./assets/grey_pattern.svg') #000  repeat;
+  opacity: 1;
+}
+
+.section__2-wrap {
+  background: url('./assets/cf6c15828a024b5c1166de4e07f82d98.png')#000 0% 0% / 100px 100px repeat;
+
+  opacity: 0.95;
 }
 
 .section__4 .block_bord,
 .section__2 .block_bord {
-  background-color: rgba(255, 255, 255, 0.9);
+  background: url('./assets/grey_pattern.svg') #F9F8F8 repeat;
+  opacity: 1;
   height: 100px;
   width: 100%;
   border-radius: 100px 100px 0px 0px;
-  mix-blend-mode: overlay;
 }
 
 .with-img {
@@ -147,10 +155,11 @@ li {
   justify-content: space-between;
   min-width: 360px;
   height: 360px;
-  background: linear-gradient(210deg, transparent 45px, #23232580 0) top right;
+  background: linear-gradient(220deg, transparent 45px, rgba(35, 35, 37, 0.65) 0) top right;
   border-radius: 12px;
   padding: 24px;
-  gap: 12px
+  gap: 12px;
+  backdrop-filter: blur(20px);
 }
 
 .card img {
