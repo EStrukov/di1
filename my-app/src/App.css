@@ -1,38 +1,169 @@
-.App {
-  text-align: center;
+html {
+  background: url('./assets/black_pattern.svg');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: rgba(255, 255, 255, 0.9);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a, p, li, h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 56px
+}
+
+li {
+  list-style-type: none;
+}
+
+.black {
+  color: #121213;
+}
+
+.white {
+  color: #F9F8F8;
+}
+
+.nav {
+  padding: 24px 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__link-button {
+  font-size: 24px;
+  line-height: 24px;
+  color: #F9F8F8;
+  background: #121213;
+  border-radius: 12px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 56px;
+  padding-right: 56px;
+}
+
+.section_header {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  font-size: 130px;
+}
+
+.section__1 .section_header {
+    background: #D9D9D9;
+}
+
+.section__1 div {
+  height: 722px;
+  background: url('./assets/tyke.png') 0 0/100% 100% no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.section__1 div p {
+  padding: 24px 32px 24px 32px;
+  border-radius: 16px;
+  border: 2px;
+  box-shadow: 8px 8px 0px 0px #121213;
+  background: #F9F8F8;
+  font-family: 'Helvetica Neue';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.47px;
+}
+
+.section__2 {
+  position: relative;
+  top: -100px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  background-color: rgba(18, 18, 19, 0.85);
+  padding: 100px 160px 200px 160px;
+}
+
+.with-img {
+  display: flex;
+  justify-content: center;
+}
+
+.section__2 .lines {
+  position: relative;
+  top: -70px;
+}
+
+.card-list {
+  
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.card-list li {
+  flex-basis: 25%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.card {
+  background: linear-gradient(210deg, transparent 45px, #23232580 0) top right;
+  border-radius: 12px;
+  padding: 24px;
+  gap: 12px
+}
+
+.card-text p {
+  font-family: 'Helvetica Neue';
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38.18px;
+  color: #A6A6A6;
+}
+
+.section__3 {
+  position: relative;
+  top: -200px;
+  padding: 200px 160px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items:center;
+  border-radius: 100px 100px 0px 0px;
+  background: rgba(255, 255, 255, 0.5);
 }
 
-.App-link {
-  color: #61dafb;
+.section__3 h1 {
+  width: 100%;
+  padding: 236px 0px;
+  border-radius: 56px;
+  background: #121213;
+  height: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* slider */
+.section__4 {
+  position: relative;
+  top: -300px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  background-color: rgba(18, 18, 19, 0.85);
+  padding: 100px 160px 200px 160px;
+}
+
+.section__4 .lines {
+  transform: rotate(100deg);
+  position: relative;
+  top: -80px;
 }
