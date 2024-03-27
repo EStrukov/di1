@@ -167,3 +167,32 @@ li {
   position: relative;
   top: -80px;
 }
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.control {
+  color: #A6A6A6;
+  font-family: "Helvetica Neue";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.control.active {
+  color: #F9F8F8;
+}
+
+.controls {
+  /* background:#121213;
+  border-radius: 56px */
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+}

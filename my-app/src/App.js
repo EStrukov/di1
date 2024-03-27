@@ -1,13 +1,103 @@
 import "./App.css";
+import SimpleSlider from "./slider";
 import lines from "./assets/lines.svg";
 import card1 from "./assets/card1.png";
 import card2 from "./assets/card2.png";
 import card3 from "./assets/card3.png";
 import card4 from "./assets/card4.png";
+import step1 from "./assets/step_1.png";
+import step2 from "./assets/step_2.png";
+import step3 from "./assets/step_3.png";
+import step4 from "./assets/step_4.png";
 
 function App() {
+  const slides = [
+    <div>
+      <img src={step1} alt="Slide 1" />
+      <div>
+        <h3>Header</h3>
+        <p>
+          Sodales dui sit vestibulum faucibus. Ornare lacinia sodales cursus
+          morbi efficitur hac tortor, vestibulum dapibus dui arcu ipsum libero,
+          sed dictum. Ex. Arcu sapien amet, libero, sit dapibus ultricies. Vitae
+          molestie tempus malesuada pellentesque quis, libero, ipsum dictum
+          ultricies. Tempus dictum hac ut. Mollis quam, non pellentesque mattis
+          mauris mattis efficitur accumsan elit. In vel et. Orci, amet
+          ultricies. Quis, imperdiet nunc velit arcu mollis odio. Morbi non
+          venenatis dolor est. Efficitur aenean imperdiet sit quam, dapibus cras
+          lectus libero, morbi dictumst. Sed id quis, lacinia dictum sit et et.
+          Sit in sed quis, aenean interdum amet, aenean et sit eget ut.
+          Malesuada malesuada justo elit. Faucibus. Sodales eleifend amet nisi
+          elit. Pulvinar et est. Amet, velit luctus id ut. Mattis.
+        </p>
+      </div>
+    </div>,
+    <div>
+      <img src={step2} alt="Slide 2" />
+      <div>
+        <h3>Header</h3>
+        <p>
+          Sodales dui sit vestibulum faucibus. Ornare lacinia sodales cursus
+          morbi efficitur hac tortor, vestibulum dapibus dui arcu ipsum libero,
+          sed dictum. Ex. Arcu sapien amet, libero, sit dapibus ultricies. Vitae
+          molestie tempus malesuada pellentesque quis, libero, ipsum dictum
+          ultricies. Tempus dictum hac ut. Mollis quam, non pellentesque mattis
+          mauris mattis efficitur accumsan elit. In vel et. Orci, amet
+          ultricies. Quis, imperdiet nunc velit arcu mollis odio. Morbi non
+          venenatis dolor est. Efficitur aenean imperdiet sit quam, dapibus cras
+          lectus libero, morbi dictumst. Sed id quis, lacinia dictum sit et et.
+          Sit in sed quis, aenean interdum amet, aenean et sit eget ut.
+          Malesuada malesuada justo elit. Faucibus. Sodales eleifend amet nisi
+          elit. Pulvinar et est. Amet, velit luctus id ut. Mattis.
+        </p>
+      </div>
+    </div>,
+    <div>
+      <img src={step3} alt="Slide 3" />
+      <div>
+        <h3>Header</h3>
+        <p>
+          Sodales dui sit vestibulum faucibus. Ornare lacinia sodales cursus
+          morbi efficitur hac tortor, vestibulum dapibus dui arcu ipsum libero,
+          sed dictum. Ex. Arcu sapien amet, libero, sit dapibus ultricies. Vitae
+          molestie tempus malesuada pellentesque quis, libero, ipsum dictum
+          ultricies. Tempus dictum hac ut. Mollis quam, non pellentesque mattis
+          mauris mattis efficitur accumsan elit. In vel et. Orci, amet
+          ultricies. Quis, imperdiet nunc velit arcu mollis odio. Morbi non
+          venenatis dolor est. Efficitur aenean imperdiet sit quam, dapibus cras
+          lectus libero, morbi dictumst. Sed id quis, lacinia dictum sit et et.
+          Sit in sed quis, aenean interdum amet, aenean et sit eget ut.
+          Malesuada malesuada justo elit. Faucibus. Sodales eleifend amet nisi
+          elit. Pulvinar et est. Amet, velit luctus id ut. Mattis.
+        </p>
+      </div>
+    </div>,
+    <div>
+      <img src={step4} alt="Slide 4" />
+      <div>
+        <h3>Header</h3>
+        <p>
+          Sodales dui sit vestibulum faucibus. Ornare lacinia sodales cursus
+          morbi efficitur hac tortor, vestibulum dapibus dui arcu ipsum libero,
+          sed dictum. Ex. Arcu sapien amet, libero, sit dapibus ultricies. Vitae
+          molestie tempus malesuada pellentesque quis, libero, ipsum dictum
+          ultricies. Tempus dictum hac ut. Mollis quam, non pellentesque mattis
+          mauris mattis efficitur accumsan elit. In vel et. Orci, amet
+          ultricies. Quis, imperdiet nunc velit arcu mollis odio. Morbi non
+          venenatis dolor est. Efficitur aenean imperdiet sit quam, dapibus cras
+          lectus libero, morbi dictumst. Sed id quis, lacinia dictum sit et et.
+          Sit in sed quis, aenean interdum amet, aenean et sit eget ut.
+          Malesuada malesuada justo elit. Faucibus. Sodales eleifend amet nisi
+          elit. Pulvinar et est. Amet, velit luctus id ut. Mattis.
+        </p>
+      </div>
+    </div>,
+  ];
+
+  const controls = ["Step 1", "Step 2", "Step 3", "Step 4"];
+
   return (
-    <div classNameName="App">
+    <div className="App">
       <header>
         <nav className="nav">
           <a className="nav_link" href="">
@@ -94,20 +184,7 @@ function App() {
             <h1 className="section_header white">How to buy?</h1>
             <img className="lines" src={lines} alt="lines" />
           </div>
-          <div>
-            <div>
-              <ul>
-                <li>Step 1</li>
-                <li>Step 1</li>
-                <li>Step 1</li>
-                <li>Step 1</li>
-              </ul>
-              <div>
-                <img src="" alt="" />
-                <p></p>
-              </div>
-            </div>
-          </div>
+          <div>{<SimpleSlider slides={slides} controls={controls} />}</div>
         </section>
         <footer className="footer-container"></footer>
       </main>
