@@ -232,6 +232,7 @@ li {
   width: 50%;
   position: relative;
 	overflow: hidden;
+  padding-left: 100px;
 }
 
 .slide__content img {
