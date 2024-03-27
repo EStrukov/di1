@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+@font-face {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Helvetica Neue"),
+       /* Если не получилось, загрузит woff2 */
+       url("./assets/HelveticaNeueLight.otf") format("woff2"),
+       /* Если браузер не поддерживает woff2, загрузит woff */
+       /* url("/fonts/roboto.woff") format("woff"); */
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -21,6 +33,10 @@ html {
 /**
  * Remove the margin in all browsers.
  */
+
+ * {
+  box-sizing: border-box;
+ }
 
 body {
   margin: 0;
