@@ -44,15 +44,15 @@ li {
 
 .nav__link-button {
   font-size: 24px;
-  line-height: 24px;
+  line-height: 17px;
   color: #F9F8F8;
   border: 2px solid #F9F8F8;
   background: #121213;
   border-radius: 12px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 56px;
-  padding-right: 56px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 54px;
+  padding-right: 54px;
 }
 
 .nav__link-button:hover {
@@ -95,8 +95,6 @@ li {
 }
 
 .section__2 {
-  position: relative;
-  top: -100px;
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
   background-color: rgba(18, 18, 19, 0.85);
@@ -152,8 +150,6 @@ li {
 }
 
 .section__3 {
-  position: relative;
-  top: -200px;
   padding: 200px 160px;
   display: flex;
   justify-content: center;
@@ -172,8 +168,6 @@ li {
 
 /* slider */
 .section__4 {
-  position: relative;
-  top: -300px;
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
   background-color: rgba(18, 18, 19, 0.85);
@@ -276,9 +270,7 @@ line-height: normal;
 }
 
 .section__5 {
-  position: relative;
-  top: -400px;
-  padding: 200px 160px;
+  padding: 200px 160px 100px;
   justify-content: center;
   align-items: center;
   border-radius: 100px 100px 0px 0px;
