@@ -237,12 +237,11 @@ li {
 }
 
 .controls {
-  /* background:#121213;
-  border-radius: 56px */
   display: flex;
-  gap: 48px;
+  justify-content: space-around;
   justify-content: center;
   position: relative;
+  gap: 20px;
   top: 50px;
   z-index: 8;
 }
