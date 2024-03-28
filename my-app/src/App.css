@@ -422,6 +422,10 @@ line-height: normal;
     height: 200px;
   }
 
+  .section__1 {
+    height: 400px;
+}
+
   .section__1 .background {
     height: 500px;
   }
@@ -442,8 +446,6 @@ line-height: normal;
     padding: 0 40px 100px 40px;
   }
   .slide__content {
-    max-height: 540px;
-    min-height: 540px;
     background: url('./assets/frame1024.png') 0 0 / 100% 100% no-repeat;
   }
 
@@ -545,8 +547,12 @@ line-height: normal;
     font-size: 16px;
   }
 
-  .section__1 .background {
+  .section__1 {
     height: 300px;
+}
+
+  .section__1 .background {
+    height: 400px;
 }
 
   .control {
@@ -580,7 +586,7 @@ line-height: normal;
   }
 
   .section__4 {
-    padding-bottom: 100px ;
+    padding-bottom: 300px ;
   }
 
   .slider__container {
@@ -590,8 +596,10 @@ line-height: normal;
   .slide__content {
     display: flex;
     flex-direction: column;
+    align-items:center;
     max-height: fit-content;
     min-height: 600px;
+    margin-bottom: 200px;
   }
 
   .img__container {
