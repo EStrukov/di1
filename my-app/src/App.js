@@ -109,69 +109,71 @@ function App() {
       {<Header />}
       <main>
         <section className="section__1">
-          
           <div className="background">
             <p>Contract: x8c81B4c816d66D36c4bF348BdeC01dBCbC70E987</p>
             {/* <div className="block_bord"><div></div></div> */}
           </div>
         </section>
         <section className="section__2">
-            <div className="with-img">
-              <img className="lines" src={lines} alt="lines" />
-              <h1 className="section_header white">Tokenomics</h1>
-            </div>
-            <ul className="card-list">
-              <li>
-                <div className="card">
-                  <img src={card1} alt="card1" />
-                  <div className="card-text">
-                    <p>$</p>
-                    <p>TOKEN</p>
-                  </div>
+          <div className="with-img">
+            <img className="lines" src={lines} alt="lines" />
+            <h1 className="section_header white">Tokenomics</h1>
+          </div>
+          <ul className="card-list">
+            <li>
+              <div className="card">
+                <img src={card1} alt="card1" />
+                <div className="card-text">
+                  <p>$</p>
+                  <p>TOKEN</p>
                 </div>
-              </li>
-              <li>
-                <div className="card">
-                  <img src={card2} alt="card1" />
-                  <div className="card-text">
-                    <p>1B</p>
-                    <p>Total Supply</p>
-                  </div>
+              </div>
+            </li>
+            <li>
+              <div className="card">
+                <img src={card2} alt="card1" />
+                <div className="card-text">
+                  <p>1B</p>
+                  <p>Total Supply</p>
                 </div>
-              </li>
-              <li>
-                <div className="card">
-                  <img src={card3} alt="card1" />
-                  <div className="card-text">
-                    <p>0/0</p>
-                    <p>taxes</p>
-                  </div>
+              </div>
+            </li>
+            <li>
+              <div className="card">
+                <img src={card3} alt="card1" />
+                <div className="card-text">
+                  <p>0/0</p>
+                  <p>taxes</p>
                 </div>
-              </li>
-              <li>
-                <div className="card">
-                  <img src={card4} alt="card1" />
-                  <div className="card-text">
-                    <p>Renounced</p>
-                    <p>and Liquidity Burnt</p>
-                  </div>
+              </div>
+            </li>
+            <li>
+              <div className="card">
+                <img src={card4} alt="card1" />
+                <div className="card-text">
+                  <p>Renounced</p>
+                  <p>and Liquidity Burnt</p>
                 </div>
-              </li>
-            </ul>
-            {/* <div className="block_bord"></div> */}
+              </div>
+            </li>
+          </ul>
+          {/* <div className="block_bord"></div> */}
         </section>
-        <section className="section__3">
+        <div className="section__3_wrap">
+          <section className="section__3">
             <h1 className="section_header white">Horizontal art</h1>
-        </section>
+          </section>
+        </div>
+
         <section className="section__4">
-            <div className="with-img">
-              <h1 className="section_header white">How to buy?</h1>
-              <img className="lines" src={lines} alt="lines" />
-            </div>
-            <div className="slider__container">
-              {<SimpleSlider slides={slides} controls={controls} />}
-            </div>
-            {/* <div className="block_bord"></div> */}
+          <div className="with-img">
+            <h1 className="section_header white">How to buy?</h1>
+            <img className="lines" src={lines} alt="lines" />
+          </div>
+          <div className="slider__container">
+            {<SimpleSlider slides={slides} controls={controls} />}
+          </div>
+          {/* <div className="block_bord"></div> */}
         </section>
         <section className="section__5">
           <div className="with-img">
