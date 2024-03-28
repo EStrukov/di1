@@ -1,15 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const Header = () => {
-  const [active, setActive] = useState(false)
+const Footer = () => {
   return (
-    <header className='header'>
-      <a className="nav_link logo" href="">
+    <footer>
+        <nav className="nav_footer">
+          <a className="nav_link logo" href="">
             Tyke Mason
           </a>
-
-        <nav className={`nav ${active ? 'open' : ''}`}>
-          
           <ul>
             <li className="nav_item">
               <a className="nav_link" href="">
@@ -31,11 +28,8 @@ const Header = () => {
             Buy $Token
           </a>
         </nav>
-        <button className={`burger ${active ? 'active' : ''}`} onClick={() => {setActive(!active)}} active={active}>
-          <span></span>
-        </button>
-      </header>
+      </footer>
   );
 };
 
-export default Header;
+export default Footer;
