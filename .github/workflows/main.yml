@@ -1,4 +1,3 @@
-
 name: Deploy to GitHub Pages
 
 on:
@@ -7,19 +6,20 @@ on:
       - main
 
 jobs:
-  build:
-    name: Build
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      with:
-        
-        script: |
-          cd my-app
-          rm -rf build
-          npm install 
-          npm run build
-          
-          cp -rf ../client/build build
-          rm -rf admin
-          cp -rf ../admin/build admin
-          pm2 restart server.js
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
