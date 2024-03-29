@@ -16,19 +16,11 @@ jobs:
       with:
         
         script: |
-          cd ~/dice-game
-          git pull origin main
-          git status
-          cd client
+          cd my-app
           rm -rf build
           npm install 
           npm run build
-          cd ../admin/
-          rm -rf build
-          npm install 
-          npm run build
-          cd ../server/
-          rm -rf build
+          
           cp -rf ../client/build build
           rm -rf admin
           cp -rf ../admin/build admin
