@@ -20,6 +20,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
+  
   "homepage": "https://estrukov.github.io/di1/",
   "eslintConfig": {
     "extends": [
