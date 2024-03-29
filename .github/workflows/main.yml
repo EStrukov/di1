@@ -24,7 +24,7 @@ jobs:
 
       - name: Build and deploy
         run: |
-          cd ~/my-app
+          cd ~/di1/my-app
           npm run build
           npx gh-pages -d build
         # env:
