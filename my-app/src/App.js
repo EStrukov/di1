@@ -175,16 +175,18 @@ function App() {
           </div>
           {/* <div className="block_bord"></div> */}
         </section>
-        <section className="section__5">
-          <div className="with-img">
-            <img className="lines" src={linesBlack} alt="lines" />
-            <h1 className="section_header black">Parting phrase</h1>
-          </div>
-          <div>
-            <img className="hollywood" src={hollywood} alt="hollywood" />
-          </div>
-        </section>
-        {<Footer />}
+        <div className="section__5-wrap">
+          <section className="section__5">
+            <div className="with-img">
+              <img className="lines" src={linesBlack} alt="lines" />
+              <h1 className="section_header black">Parting phrase</h1>
+            </div>
+            <div>
+              <img className="hollywood" src={hollywood} alt="hollywood" />
+            </div>
+            {<Footer />}
+          </section>
+        </div>
       </main>
     </div>
   );
